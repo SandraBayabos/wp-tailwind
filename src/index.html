@@ -12,23 +12,23 @@
     />
   </head>
   <body class="w-full">
-    <div
-      class="mt-16 md:px-11 py-3.5 px-4 bg-darkBlue flex justify-between items-center"
-    >
-      <h1
-        class="text-peppermint md:text-6xl text-5xl font-normal sm:leading-10 font-clashDisplayRegular"
-      >
-        Project Manager
-      </h1>
-      <img
-        src="./dist/images/right-down.svg"
-        alt="down-arrow"
-        class="w-[57px] md:w-fit"
-      />
+    <div class="bg-darkBlue">
+      <div class="mt-16 py-3.5 container flex justify-between items-center">
+        <h1
+          class="text-peppermint md:text-6xl text-5xl font-normal sm:leading-10 font-clashDisplayRegular"
+        >
+          Project Manager
+        </h1>
+        <img
+          src="./dist/images/right-down.svg"
+          alt="down-arrow"
+          class="w-[57px] md:w-fit"
+        />
+      </div>
     </div>
 
     <div
-      class="md:mx-12 md:px-1 flex md:pt-12 md:pb-24 mb-0 gap-7 flex-col sm:flex-row"
+      class="md:container flex md:pt-12 md:pb-24 mb-0 gap-7 flex-col sm:flex-row"
     >
       <div class="md:w-1/2 px-4 md:px-0 md:py-0 pb-14">
         <div class="pt-12">
@@ -88,7 +88,7 @@
         </div>
       </div>
       <div
-        class="md:w-1/2 py-12 md:px-11 font-inter px-4"
+        class="md:w-1/2 py-12 md:px-11 font-inter px-4 border border-lightGrey"
         style="
           background: linear-gradient(
             180deg,
@@ -162,7 +162,7 @@
                 style="background: none"
                 id="availability"
                 type="date"
-                placeholder=""
+                placeholder="null"
               />
             </div>
 
@@ -182,16 +182,20 @@
                 style="background: none"
                 onclick="document.getElementById('resume').click()"
               >
-                <img src="./dist/images/cloud-computing.svg" alt="upload button" class="absolute right-0 bottom-1">
+                <img
+                  src="./dist/images/cloud-computing.svg"
+                  alt="upload button"
+                  class="absolute right-0 bottom-5"
+                />
               </button>
             </div>
 
-            <div class="mb-12">
+            <div class="mb-12 relative">
               <label class="block text-gray-700 text-sm" for="reference">
                 How did you hear about us?
               </label>
               <select
-                class="border-b border-black w-full text-gray-700 leading-tight focus:outline-none text-sm"
+                class="border-b border-black w-full text-gray-700 leading-tight focus:outline-none text-sm py-2 pr-8"
                 style="background: none"
                 id="reference"
               >
@@ -201,6 +205,11 @@
                 <option value="indeed">Indeed</option>
                 <option value="jobstreet">Jobstreet</option>
               </select>
+              <div
+                class="pointer-events-none absolute inset-y-0 right-0 flex items-center text-gray-700"
+              >
+                <img src="./dist/images/down-icon.svg" alt="down button" />
+              </div>
             </div>
 
             <div class="mb-12">
@@ -234,8 +243,8 @@
       </div>
     </div>
 
-    <div
-      class="px-11 md:px-12 md:pt-16 pt-14"
+    <footer
+      class="md:pt-16 pt-14"
       style="
         background: linear-gradient(
           123deg,
@@ -249,102 +258,106 @@
         );
       "
     >
-      <div class="flex justify-between items-center mb-16">
-        <div class="flex gap-6 items-center">
+      <div class="container">
+        <div class="flex justify-between items-center mb-16">
+          <div class="flex gap-6 items-center">
+            <img
+              src="./dist/images/platinumpodium.png"
+              alt="platinum podium"
+              class="h-[81px] w-[103px] md:h-full md:w-full"
+            />
+            <img
+              src="./dist/images/ppc-logo.png"
+              alt="ppc logo"
+              class="h-[69px] w-[137px] md:h-full md:w-full"
+            />
+          </div>
           <img
-            src="./dist/images/platinumpodium.png"
-            alt="platinum podium"
-            class="h-[81px] w-[103px] md:h-full md:w-full"
-          />
-          <img
-            src="./dist/images/ppc-logo.png"
-            alt="ppc logo"
-            class="h-[69px] w-[137px] md:h-full md:w-full"
+            src="./dist/images/right-down-grey.svg"
+            alt="right-arrow"
+            class="hidden md:block"
           />
         </div>
-        <img
-          src="./dist/images/right-down-grey.svg"
-          alt="right-arrow"
-          class="hidden md:block"
-        />
-      </div>
-      <div class="flex items-center">
-        <img
-          src="./dist/images/sme-logo.png"
-          alt="sme logo"
-          class="md:hidden block mx-auto pb-14"
-        />
-      </div>
-      <div
-        class="flex gap-12 mb-14 pb-1 md:flex-row flex-col justify-center md:justify-start"
-      >
-        <h4 class="font-clashDisplayRegular text-6xl">Follow Us</h4>
-        <img
-          src="./dist/images/sm.png"
-          alt="socialmedia"
-          width="116"
-          height="46"
-          class="object-none block mx-auto md:mx-0"
-        />
-      </div>
-      <div class="flex justify-between">
-        <div class="flex flex-col md:flex-row">
-          <div class="pr-16">
-            <div class="md:pb-12 md:mb-0 pb-4 mb-1">
-              <div class="font-clashDisplaySemibold text-2xl pb-2">Call Us</div>
-              <p class="font-inter">03-5525 4405 </p>
-            </div>
-            <div class="md:pb-12 md:mb-0 pb-4 mb-1">
-              <div class="font-clashDisplaySemibold text-2xl pb-2">
-                E-mail Us
-              </div>
-              <p class="font-inter">inquiry@platinumpodium.com.my </p>
-            </div>
-          </div>
-          <div>
-            <div class="font-clashDisplaySemibold text-2xl pb-2">Address</div>
-            <p class="font-inter leading-8">
-              E-03-02 & 03, The Gamuda Biz Suites, <br />
-              No. 12, Jln Anggerik Vanilla 31/99, <br />
-              Kota Kemuning, Seksyen 31,<br />
-              40400 Shah Alam, Selangor, <br />
-              Malaysia
-            </p>
-          </div>
+        <div class="flex items-center">
+          <img
+            src="./dist/images/sme-logo.png"
+            alt="sme logo"
+            class="md:hidden block mx-auto pb-14"
+          />
         </div>
-        <img
-          src="./dist/images/sme-logo.png"
-          alt="sme logo"
-          width="130"
-          height="130"
-          class="object-none self-end hidden md:block"
-        />
-      </div>
-      <div class="flex flex-col md:flex-row justify-between mt-16 pt-2 pb-12">
         <div
-          class="flex flex-col md:flex-row md:justify-evenly md:items-center justify-start gap-2.5 md:gap-10"
+          class="flex gap-12 mb-14 pb-1 md:flex-row flex-col justify-center md:justify-start"
         >
-          <h4 class="font-clashDisplaySemibold text-2xl">Useful Links</h4>
-          <a href="" class="font-inter text-sm">About Us</a>
-          <a href="" class="font-inter text-sm">Meet The Team</a>
-          <a href="" class="font-inter text-sm">Our Solutions</a>
-          <a href="" class="font-inter text-sm">Gallery</a>
-          <a href="" class="font-inter text-sm">Let's Connect</a>
+          <h4 class="font-clashDisplayRegular text-6xl">Follow Us</h4>
+          <img
+            src="./dist/images/sm.png"
+            alt="socialmedia"
+            width="116"
+            height="46"
+            class="object-none block mx-auto md:mx-0"
+          />
         </div>
-        <div class="mt-16 pt-2 md:mt-0 md:pt-0">
-          <h4 class="font-clashDisplaySemibold text-2xl">Back to Top</h4>
+        <div class="flex justify-between">
+          <div class="flex flex-col md:flex-row">
+            <div class="pr-16">
+              <div class="md:pb-12 md:mb-0 pb-4 mb-1">
+                <div class="font-clashDisplaySemibold text-2xl pb-2">
+                  Call Us
+                </div>
+                <p class="font-inter">03-5525 4405 </p>
+              </div>
+              <div class="md:pb-12 md:mb-0 pb-4 mb-1">
+                <div class="font-clashDisplaySemibold text-2xl pb-2">
+                  E-mail Us
+                </div>
+                <p class="font-inter">inquiry@platinumpodium.com.my </p>
+              </div>
+            </div>
+            <div>
+              <div class="font-clashDisplaySemibold text-2xl pb-2">Address</div>
+              <p class="font-inter leading-8">
+                E-03-02 & 03, The Gamuda Biz Suites, <br />
+                No. 12, Jln Anggerik Vanilla 31/99, <br />
+                Kota Kemuning, Seksyen 31,<br />
+                40400 Shah Alam, Selangor, <br />
+                Malaysia
+              </p>
+            </div>
+          </div>
+          <img
+            src="./dist/images/sme-logo.png"
+            alt="sme logo"
+            width="130"
+            height="130"
+            class="object-none self-end hidden md:block"
+          />
+        </div>
+        <div class="flex flex-col md:flex-row justify-between mt-16 pt-2 pb-12">
+          <div
+            class="flex flex-col md:flex-row md:justify-evenly md:items-center justify-start gap-2.5 md:gap-10"
+          >
+            <h4 class="font-clashDisplaySemibold text-2xl">Useful Links</h4>
+            <a href="" class="font-inter text-sm">About Us</a>
+            <a href="" class="font-inter text-sm">Meet The Team</a>
+            <a href="" class="font-inter text-sm">Our Solutions</a>
+            <a href="" class="font-inter text-sm">Gallery</a>
+            <a href="" class="font-inter text-sm">Let's Connect</a>
+          </div>
+          <div class="mt-16 pt-2 md:mt-0 md:pt-0">
+            <h4 class="font-clashDisplaySemibold text-2xl">Back to Top</h4>
+          </div>
+        </div>
+        <div class="flex justify-center items-center pb-4">
+          <div class="mx-auto text-xs">
+            <span class="text-grey">Copyright @ 2023</span>
+            <span>Platinum Podium Sdn. Bhd.</span>
+            <span class="text-grey">|</span>
+            <span class="text-grey">All Rights Reserved</span>
+            <span class="text-grey">|</span>
+            <span class="text-grey">Developed by</span> <span>CloudExpo</span>
+          </div>
         </div>
       </div>
-      <div class="flex justify-center items-center pb-4">
-        <div class="mx-auto text-xs">
-          <span class="text-grey">Copyright @ 2023</span>
-          <span>Platinum Podium Sdn. Bhd.</span>
-          <span class="text-grey">|</span>
-          <span class="text-grey">All Rights Reserved</span>
-          <span class="text-grey">|</span>
-          <span class="text-grey">Developed by</span> <span>CloudExpo</span>
-        </div>
-      </div>
-    </div>
+    </footer>
   </body>
 </html>

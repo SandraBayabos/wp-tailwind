@@ -11,3 +11,8 @@
   font-family: "ClashDisplay-Semibold";
   src: url("./fonts/ClashDisplay-Semibold.woff") format("woff");
 }
+
+select#reference {
+  appearance: none;
+  z-index: 1;
+}

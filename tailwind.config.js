@@ -22,6 +22,7 @@ module.exports = {
       darkBlue: "#222741",
       peppermint: "#A2FFEA",
       grey: "#464646",
+      lightGrey: "#E5E4E2",
     },
     extend: {},
   },
