@@ -7,13 +7,289 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <div class="mt-16 px-11 py-9 bg-darkBlue">
-      <h1 class="text-peppermint text-6xl font-normal font-clashDisplayRegular">Project Manager</h1>
+    <div
+      class="mt-16 px-11 py-3.5 bg-darkBlue flex justify-between items-center"
+    >
+      <h1 class="text-peppermint text-6xl font-normal font-clashDisplayRegular">
+        Project Manager
+      </h1>
+      <img src="./dist/images/right-down.svg" alt="down-arrow" />
+    </div>
+    <div class="mx-12 px-1 flex pt-12 pb-24 gap-7">
+      <div class="w-1/2">
+        <div class="pt-12">
+          <div class="font-inter">
+            <h4 class="font-clashDisplaySemibold">About The Role</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Et
+              egestas quis ipsum suspendisse. Sem integer vitae justo eget.
+              Lobortis scelerisque fermentum dui faucibus. Porta nibh venenatis
+              cras sed felis.
+              <br /><br />
+            </p>
+            <p>
+              Faucibus scelerisque eleifend donec pretium vulputate. Vitae purus
+              faucibus ornare suspendisse sed nisi. At risus viverra adipiscing
+              at in tellus integer feugiat scelerisque. Molestie a iaculis at
+              erat pellentesque adipiscing commodo elit. Nec dui nunc mattis
+              enim ut tellus elementum.
+              <br /><br />
+            </p>
+            <p>
+              Volutpat diam ut venenatis tellus in metus vulputate eu
+              scelerisque. Faucibus ornare suspendisse sed nisi lacus sed
+              viverra.
+              <br /><br />
+            </p>
+          </div>
+        </div>
+        <div class="pt-12">
+          <div class="font-inter">
+            <h4 class="font-clashDisplaySemibold">Where We Work</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Et
+              egestas quis ipsum suspendisse. Sem integer vitae justo eget.
+              Lobortis scelerisque fermentum dui faucibus.
+              <br /><br />
+            </p>
+            <p>
+              Porta nibh venenatis cras sed felis. Faucibus scelerisque eleifend
+              donec pretium vulputate. Vitae purus faucibus ornare suspendisse
+              sed nisi.
+              <br /><br />
+            </p>
+          </div>
+        </div>
+        <div class="pt-12">
+          <h4 class="font-clashDisplaySemibold">What We Offer</h4>
+          <ul>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>consectetur adipiscing elit</li>
+            <li>sed do eiusmod tempor</li>
+            <li>incididunt ut labore et dolore</li>
+            <li>magna aliqua. Et egestas</li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="w-1/2 py-12 px-11 font-inter"
+        style="
+          background: linear-gradient(
+            180deg,
+            rgba(199.44, 240.64, 232.84, 0.4) 0%,
+            rgba(255, 255, 255, 0.19) 51%,
+            rgba(199.44, 240.64, 232.84, 0.4) 100%
+          );
+        "
+      >
+        <h3 class="font-clashDisplayRegular text-4xl pb-12">Apply Now</h3>
+        <div>
+          <p class="font-bold pb-5">Personal Information</p>
+          <form>
+            <div class="mb-12">
+              <label class="block text-gray-700 text-sm" for="fullname">
+                Full Name
+              </label>
+              <input
+                class="border-b border-black w-full text-gray-700 leading-tight focus:outline-none text-sm"
+                style="background: none"
+                id="fullname"
+                type="text"
+              />
+            </div>
+
+            <div class="mb-12">
+              <label class="block text-gray-700 text-sm" for="email">
+                Email
+              </label>
+              <input
+                class="border-b border-black w-full text-gray-700 leading-tight focus:outline-none text-sm"
+                style="background: none"
+                id="email"
+                type="email"
+              />
+            </div>
+
+            <div class="mb-12">
+              <label class="block text-gray-700 text-sm" for="address">
+                Address
+              </label>
+              <textarea
+                class="border-b border-black w-full h-5 text-gray-700 leading-tight focus:outline-none text-sm resize-none mb-12"
+                style="background: none"
+                id="address"
+              ></textarea>
+              <textarea
+                class="border-b border-black w-full h-5 text-gray-700 leading-tight focus:outline-none text-sm resize-none"
+                style="background: none"
+              ></textarea>
+            </div>
+
+            <div class="mb-12">
+              <label class="block text-gray-700 text-sm" for="jobtitle">
+                Job Title
+              </label>
+              <input
+                class="border-b border-black w-full text-gray-700 leading-tight focus:outline-none text-sm"
+                style="background: none"
+                id="jobtitle"
+                type="text"
+              />
+            </div>
+
+            <div class="mb-12">
+              <label class="block text-gray-700 text-sm" for="availability">
+                Date Available to Start
+              </label>
+              <input
+                class="border-b border-black w-full text-gray-700 leading-tight focus:outline-none text-sm"
+                style="background: none"
+                id="availability"
+                type="date"
+              />
+            </div>
+
+            <div class="mb-12">
+              <label class="block text-gray-700 text-sm" for="resume">
+                Please Upload Your Resume/CV
+              </label>
+              <input
+                class="border-b border-black w-full text-gray-700 leading-tight focus:outline-none text-sm"
+                style="background: none"
+                id="resume"
+                type="file"
+              />
+            </div>
+
+            <div class="mb-12">
+              <label class="block text-gray-700 text-sm" for="reference">
+                How did you hear about us?
+              </label>
+              <select
+                class="border-b border-black w-full text-gray-700 leading-tight focus:outline-none text-sm"
+                style="background: none"
+                id="reference"
+              >
+                <option value=""></option>
+                <option value="linkedin">LinkedIn</option>
+                <option value="google">Google</option>
+                <option value="indeed">Indeed</option>
+                <option value="jobstreet">Jobstreet</option>
+              </select>
+            </div>
+
+            <div class="mb-12">
+              <label class="block text-gray-700 text-sm" for="additional">
+                Any additional information you'd like to provide?
+              </label>
+              <textarea
+                class="border-b border-black w-full h-5 text-gray-700 leading-tight focus:outline-none text-sm resize-none mb-12"
+                style="background: none"
+                id="additional"
+              ></textarea>
+              <textarea
+                class="border-b border-black w-full h-5 text-gray-700 leading-tight focus:outline-none text-sm resize-none"
+                style="background: none"
+              ></textarea>
+            </div>
+
+            <div class="mb-6 mx-auto">
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white py-4 px-9 rounded-full focus:outline-none focus:shadow-outline block mx-auto"
+                style="
+                  background: linear-gradient(98deg, black 0%, #264f49 100%);
+                "
+                type="button"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="mx-12 px-1">
+      <div class="flex justify-between items-center mb-16">
+        <div class="flex gap-6">
+          <img src="./dist/images/platinumpodium.png" alt="platinum podium" />
+          <img src="./dist/images/ppc-logo.png" alt="ppc logo" />
+        </div>
+        <img src="./dist/images/right-down-grey.svg" alt="right-arrow" />
+      </div>
+      <div class="flex gap-12 mb-14 pb-1">
+        <h4 class="font-clashDisplayRegular text-6xl">Follow Us</h4>
+
+        <img
+          src="./dist/images/sm.png"
+          alt="socialmedia"
+          width="116"
+          height="46"
+          class="object-none"
+        />
+      </div>
+      <div class="flex justify-between">
+        <div class="flex">
+          <div class="pr-16">
+            <div class="pb-12">
+              <div class="font-clashDisplaySemibold text-2xl pb-2">Call Us</div>
+              <p class="font-inter">03-5525 4405 </p>
+            </div>
+            <div>
+              <div class="font-clashDisplaySemibold text-2xl pb-2">
+                E-mail Us
+              </div>
+              <p class="font-inter">inquiry@platinumpodium.com.my </p>
+            </div>
+          </div>
+          <div>
+            <div class="font-clashDisplaySemibold text-2xl pb-2">Address</div>
+            <p class="font-inter leading-8">
+              E-03-02 & 03, The Gamuda Biz Suites, <br />
+              No. 12, Jln Anggerik Vanilla 31/99, <br />
+              Kota Kemuning, Seksyen 31,<br />
+              40400 Shah Alam, Selangor, <br />
+              Malaysia
+            </p>
+          </div>
+        </div>
+        <img
+          src="./dist/images/sme-logo.png"
+          alt="sme logo"
+          width="130"
+          height="130"
+          class="object-none self-end"
+        />
+      </div>
+      <div class="flex justify-between mt-16 pt-2 pb-12">
+        <div class="flex justify-evenly items-center gap-10">
+          <h4 class="font-clashDisplaySemibold text-2xl">Useful Links</h4>
+          <a href="" class="font-inter text-sm">About Us</a>
+          <a href="" class="font-inter text-sm">Meet The Team</a>
+          <a href="" class="font-inter text-sm">Our Solutions</a>
+          <a href="" class="font-inter text-sm">Gallery</a>
+          <a href="" class="font-inter text-sm">Let's Connect</a>
+        </div>
+        <div>
+          <h4 class="font-clashDisplaySemibold text-2xl">Back to Top</h4>
+        </div>
+      </div>
+      <div class="flex justify-center items-center">
+        <div class="mx-auto text-xs">
+          <span class="text-grey">Copyright @ 2023</span>
+          <span>Platinum Podium Sdn. Bhd.</span>
+          <span class="text-grey">|</span>
+          <span class="text-grey">All Rights Reserved</span>
+          <span class="text-grey">|</span>
+          <span class="text-grey">Developed by</span> <span>CloudExpo</span>
+        </div>
+      </div>
     </div>
   </body>
 </html>

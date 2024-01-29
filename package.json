@@ -12,6 +12,7 @@
     "development": "postcss css/tailwind.css -o src/dist/main.css",
     "production": "postcss css/tailwind.css -o src/dist/main.css",
     "copy-fonts": "cp -r css/fonts/ src/dist/fonts/",
+    "copy-images": "cp -r images/ src/dist/images/",
     "start": "npm run serve"
   }
 }

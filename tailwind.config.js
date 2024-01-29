@@ -9,6 +9,7 @@ module.exports = {
     fontFamily: {
       clashDisplayRegular: ["ClashDisplay-Regular", "sans-serif"],
       inter: ["Inter", "sans-serif"],
+      clashDisplaySemibold: ["ClashDisplay-Semibold", "sans-serif"],
     },
     colors: {
       black: "#000000",
@@ -20,6 +21,7 @@ module.exports = {
       teal: "#217F70",
       darkBlue: "#222741",
       peppermint: "#A2FFEA",
+      grey: "#464646",
     },
     extend: {},
   },
