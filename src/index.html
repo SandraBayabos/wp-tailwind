@@ -162,19 +162,28 @@
                 style="background: none"
                 id="availability"
                 type="date"
+                placeholder=""
               />
             </div>
 
-            <div class="mb-12">
+            <div class="mb-12 relative">
               <label class="block text-gray-700 text-sm" for="resume">
                 Please Upload Your Resume/CV
               </label>
               <input
-                class="border-b border-black w-full text-gray-700 leading-tight focus:outline-none text-sm"
+                class="hidden border-b border-black w-full text-gray-700 leading-tight focus:outline-none text-sm"
                 style="background: none"
                 id="resume"
                 type="file"
+                accept=".pdf,.doc,.docx"
               />
+              <button
+                class="border-b border-black w-full text-gray-700 leading-tight focus:outline-none text-sm py-2 px-3 bg-white absolute right-0 bottom-21 mb-2"
+                style="background: none"
+                onclick="document.getElementById('resume').click()"
+              >
+                <img src="./dist/images/cloud-computing.svg" alt="upload button" class="absolute right-0 bottom-1">
+              </button>
             </div>
 
             <div class="mb-12">
