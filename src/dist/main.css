@@ -11,7 +11,7 @@
   box-sizing: border-box; /* 1 */
   border-width: 0; /* 2 */
   border-style: solid; /* 2 */
-  border-color: #e5e7eb; /* 2 */
+  border-color: currentColor; /* 2 */
 }
 
 ::before,
@@ -492,25 +492,37 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.mt-16 {
+  margin-top: 4rem;
 }
-.font-bold {
-  font-weight: 700;
+.bg-darkBlue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 39 65 / var(--tw-bg-opacity));
 }
-.text-red-500 {
+.px-11 {
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
+}
+.py-9 {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+.font-clashDisplayRegular {
+  font-family: ClashDisplay-Regular, sans-serif;
+}
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+.font-normal {
+  font-weight: 400;
+}
+.text-peppermint {
   --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
+  color: rgb(162 255 234 / var(--tw-text-opacity));
 }
-.text-red-800 {
-  --tw-text-opacity: 1;
-  color: rgb(153 27 27 / var(--tw-text-opacity));
-}
-.text-blue-600 {
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
-}
-.underline {
-  text-decoration-line: underline;
+
+@font-face {
+  font-family: "ClashDisplay-Regular";
+  src: url("./fonts/ClashDisplay-Regular.woff") format("woff");
 }

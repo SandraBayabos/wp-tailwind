@@ -11,6 +11,7 @@
     "serve": "concurrently \"postcss css/tailwind.css -o src/dist/main.css --watch\"  \"live-server ./src\"",
     "development": "postcss css/tailwind.css -o src/dist/main.css",
     "production": "postcss css/tailwind.css -o src/dist/main.css",
+    "copy-fonts": "cp -r css/fonts/ src/dist/fonts/",
     "start": "npm run serve"
   }
 }
