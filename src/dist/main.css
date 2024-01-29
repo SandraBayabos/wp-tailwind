@@ -874,6 +874,10 @@ select#reference {
     flex-direction: row;
   }
 
+  .sm\:justify-center {
+    justify-content: center;
+  }
+
   .sm\:pb-0 {
     padding-bottom: 0px;
   }
@@ -933,6 +937,10 @@ select#reference {
 
   .md\:justify-start {
     justify-content: flex-start;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
   }
 
   .md\:justify-evenly {
