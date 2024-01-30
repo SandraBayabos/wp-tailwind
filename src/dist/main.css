@@ -793,6 +793,9 @@ video {
 .font-semibold {
   font-weight: 600;
 }
+.font-medium {
+  font-weight: 500;
+}
 .leading-8 {
   line-height: 2rem;
 }
