@@ -10,6 +10,7 @@ module.exports = {
       clashDisplayRegular: ["ClashDisplay-Regular", "sans-serif"],
       inter: ["Inter", "sans-serif"],
       clashDisplaySemibold: ["ClashDisplay-Semibold", "sans-serif"],
+      clashDisplay: ["Clash Display", "sans-serif"],
     },
     colors: {
       black: "#000000",
